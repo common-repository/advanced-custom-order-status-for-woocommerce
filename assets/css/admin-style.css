@@ -1,0 +1,233 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+ .wos__icons_field {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+ .wos__icons {
+    padding-right: 10px;
+    margin-bottom: -4px;
+    position: relative;
+
+}
+
+.wos__icons ul {
+    list-style-type: none;
+    padding: 5px;
+    width: 320px;
+    height: 285px;
+    overflow-y: scroll;
+    margin: -5px 0 0;
+    display: none;
+    border: 1px solid #8c8f94;
+    background-color: #FCFCFC;
+    position: absolute;
+    z-index: 9;
+}
+
+.wos__icons li {
+    display: inline-block;
+}
+
+.wos__icons a {
+    display: inline-block;
+    overflow: hidden;
+    text-decoration: none;
+    border: 1px solid #e6e6e8;
+    padding: 5px 10px;
+    width: 310px;
+    color: #bcc0c3;
+    background-color: #f9f9f9;
+    position: relative;
+    border-radius: 3px;
+}
+
+.wos__icons a.open {
+    border-bottom-color: #fff;
+    color: #000;
+}
+
+.wos__icons .wos__icons--arrow {
+    float: right;
+}
+
+span.dashicons.dashicons-no-icon {
+    display: inline-block;
+    transform: rotate(50deg);
+    border-top: 1px solid #000;
+    height: 0px;
+    margin-top: 10px;
+}
+
+.wos__icon label[for=no-icon]{
+    border: 1px solid #000;
+    border-radius: 50%;
+    display: none;
+}
+
+.wos__hidden {
+    display: none !important;
+}
+
+.wos__icon label {
+    display: inline-block;
+    padding: 4px;
+    cursor: pointer;
+    color: #777;
+    border: 1px solid transparent;
+
+}
+
+.wos__icon label:hover {
+    color: #000;
+}
+
+.wos__icon input[type='radio']:checked + label {
+    color: #000;
+    border-color: #000;
+}
+
+mark.order-status .dashicons {
+    padding: 6px 10px;
+}
+
+.spcos__status_email_addr {
+    display: none;
+}
+
+.wc-custom-order-status-form input[type=file] {
+    border: 1px solid #dcdee2;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.wc-custom-order-status-form input[type=text],
+.wc-custom-order-status-form input[type=email],
+.wc-custom-order-status-form input[type=color],
+.wc-custom-order-status-form select,
+.wc-custom-order-status-form textarea {
+    border: 1px solid #50575e;
+}
+
+.wc-custom-order-status-form .wp-editor-area {
+    width: 100% !important;
+    border: none;
+}
+
+.wc-custom-order-status-form input[type=color] {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    border-radius: 0;
+}
+
+/** Rough **/
+table.form-table.wc-custom-order-status-form p.desc {
+    color: #b59292;
+    font-style: italic;
+    font-size: 12px;
+}
+
+table.form-table.wc-custom-order-status-form td p.img_icon {
+    width: 150px;
+    height: 150px;
+}
+
+table.form-table.wc-custom-order-status-form img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+/** Metabox design **/
+table.form-table.wc-custom-order-status-form th {
+    padding: 20px 10px 20px 20px;
+
+}
+
+table.form-table.wc-custom-order-status-form tbody {
+    border: 1px solid #ddd;
+}
+
+table.form-table.wc-custom-order-status-form tr > th {
+    background: #FCFCFC;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+table.form-table.wc-custom-order-status-form tr > th > label {
+    color: #555;
+}
+
+table.form-table.wc-custom-order-status-form tr td {
+    border-bottom: 1px solid #ddd;
+    padding-right: 1px;
+}
+
+table.form-table.wc-custom-order-status-form tr [type=hidden] + td {
+    border: 0 solid;
+    padding: 0;
+}
+
+table.form-table.wc-custom-order-status-form.order-status-pro tr > th > label {
+    color: #cdcdcd;
+    cursor: auto;
+}
+
+div#wc_order_status_meta .inside {
+    display: flex !important;
+    flex-direction: column;
+}
+
+table.form-table.wc-custom-order-status-form.order-status-pro {
+    position: relative;
+    order: 2;
+}
+
+.wc-custom-order-status-form .ss-main .ss-values .ss-value {
+    background-color: #007cba;
+    padding: 5px;
+}
+
+.wc-custom-order-status-form .ss-main .ss-values .ss-placeholder {
+    color: #2c3338;
+}
+
+.wc-custom-order-status-form select,
+.wc-custom-order-status-form input[type=text],
+.wc-custom-order-status-form input[type=email],
+.wc-custom-order-status-form textarea {
+    width: 330px !important;
+    padding: 2px 8px 3px 8px;
+}
+
+.wc-custom-order-status-form .ss-main {
+    width: 330px !important;
+    border: 1px solid #50575e;
+    border-radius: 3px;
+}
+
+.wc-custom-order-status-form .ss-content {
+    border: 1px solid #50575e;
+}
+
+.wc-custom-order-status-form .components-button {
+    padding: 5px 12px 9px !important;
+    height: unset !important;
+}
+
+td.used.column-used {
+    font-weight: 600;
+}
+
+span.order-status.status-icon {
+    padding: 3px 15px;
+    display: inline-block;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 500;
+}
